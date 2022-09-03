@@ -54,7 +54,7 @@ def iteracni_metoda_benchmark(A, B, pocet_iteraci=25):
     # 2) stanoveni hloupeho pocatecniho odhadu reseni
     X = np.ones(n)
 
-    # 3) iterovani vztahem x[n+1] = D_inv . (B - N . x[n]) az po dosazeni pozadovane presnosti reseni
+    # 3) iterovani vztahem x[n+1] = D_inverzni . (B - N . x[n]) az po dosazeni pozadovane presnosti reseni
     for _ in range(pocet_iteraci):
         X = (B - np.dot(N, X)) / D
         X = X.diagonal().transpose()
