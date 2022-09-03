@@ -39,7 +39,6 @@ def iteracni_metoda_benchmark(A, B, pocet_iteraci=25):
     A a B jsou 2 ctvercove matice stejnych rozmeru.
     Pouziva moji implementaci Jacobiho metody.
     Funkce vrati pouze cas, jak dlouho trval vypocet.
-    Funkce vrati None, pokud matice A nebyla ostre diagonalne dominantni.
     """    
 
     cas_na_zacatku = time.perf_counter()
