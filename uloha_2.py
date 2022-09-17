@@ -47,6 +47,8 @@ def funkcnost_podle_sirky():
         y.append(ruzne_sirky[klic])
 
     plt.bar(x, y)
+    plt.xlabel("Zeměpisná šířka")
+    plt.ylabel("Poměrné zastoupení oprávněných stížností")
     plt.show()
 
 @staticmethod
@@ -154,7 +156,7 @@ def mesto_s_nejvice_nefungujicimi_kontrolkami():
     
 
 if __name__ == '__main__':
-    # funkcnost_podle_sirky()
+    funkcnost_podle_sirky()
     # celkova_funkcnost()
     # aktivni_automaty_v_jednotlivych_statech()
     # nejvice_stiznosti_v_casech()
